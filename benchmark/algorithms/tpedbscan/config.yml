@@ -1,0 +1,4 @@
+docker-image: dbscan-benchmarks-tpedbscan
+module: tpedbscan
+constructor: TPEDBSCAN
+name: tpedbscan

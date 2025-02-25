@@ -1,0 +1,4 @@
+docker-image: dbscan-benchmarks-sklearn
+module: sklearn
+constructor: SKLearnDBSCAN
+name: sklearn
