@@ -3,8 +3,8 @@ module: srrdbscan
 name: srrdbscan
 constructor: SRRDBSCAN
 args:
-  - [0.01] #[.01, 0.1, 0.5, 0.9] # [0.01, 0.1, 0.5, 0.9] # failure probability
-  - [15] # memory usage (for small datasets, 0.1 is a good choice as well)
+  - [.01, 0.1, 0.5, 0.9] # [0.01, 0.1, 0.5, 0.9] # failure probability
+  - [5] # memory usage (for small datasets, 0.1 is a good choice as well)
   - [56] # number of threads
   - [1] # shrinkage parameter (fraction of repetitions inspected)
   - [1.0] # [1.0, 1.1, 1.5, 2.0] # approximation factor
