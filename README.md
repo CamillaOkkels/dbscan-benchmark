@@ -8,18 +8,20 @@ Consider adding your own implementations through pull requests.
 
 We currently support the following implementations:
 
-Exact implementations:
-- [sklearn's DBSCAN](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html)
+Exact implementations: 
+- [sklearn's DBSCAN](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html): the popular DBSCAN implementation in sklearn.
 - [tpeDBSCAN](https://github.com/wangyiqiu/dbscan-python): A grid-based dbscan that works really well in low-dimensional data, see [Wang et al.](https://arxiv.org/abs/1912.06255)
 - [FAISS-based DBSCAN](https://github.com/facebookresearch/faiss), a naïve baseline used for high-dimensional data, see [our implementation](benchmark/algorithms/faiss/module.py) for details.
 
-Approximate implementations:
+Approximate implementations (these do not guarantee exact clustering results):
 - [sngDBSCAN](https://github.com/jenniferjang/subsampled_neighborhood_graph_dbscan): A sampling-based approach to DBSCAN by [Jiang et al.](https://arxiv.org/abs/2006.06743)
 - [srrDBSCAN](https://github.com/CamillaOkkels/srrdbscan): An LSH-based dbscan for high-dimensional Euclidean data, see [Okkels et al.](https://openproceedings.org/2025/conf/edbt/paper-208.pdf)
 
 ## Supported datasets
 
 We currently support the following datasets under Euclidean distance. 
+We primarily focus on high-dimensional datasets as the pose a significant challenge to scalable clustering algorithms.
+As reference, we include two popular low-dimensional datasets, Household and Pamap2. 
 Each dataset comes with a suggested number of neighbors (minPts) and suggested epsilon values for DBSCAN. 
 
 | Dataset     | Size       | Dimensions | minPts | Epsilon | Method |
