@@ -96,14 +96,14 @@ args:
 ```
 
 The `args` part specifies all the experiments that are going to be run. 
-The cartesion product of all the given lists is making up the list of individual runs that are tried out in the experiment. (In the example, 5 * 2 * 1 * 1 runs are conducted).
+The Cartesian product of all the given lists is making up the list of individual runs that are tried out in the experiment. (In the example, 5 * 2 * 1 * 1 runs are conducted).
 `args` have to match the number of arguments expected by the constructor. 
 
 
 ## Evaluation
 
 All results are stored in the following scheme `results/<dataset>/<eps>/<minPts>/<algorithm>/`, with one hdf5 file per run. The easiest way to handle them is to post-process them using a Jupyer notebook. 
-An example is given in `evaluation/cluster_analysis.ipynb`.
+Examples are given in `evaluation/cluster_analysis*.ipynb`.
 
 In our experiments, we measured the following clustering times (in seconds).
 
