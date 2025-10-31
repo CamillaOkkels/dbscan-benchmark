@@ -79,7 +79,7 @@ sudo chmod -R 777 results/
 
 ## Algorithm configuration
 
-Algorithm configurations are stored in YAML files. The are available in `benchmark/algorithms/<ALGORITHM>/config.yml.`
+Algorithm configurations are stored in YAML files. These are available in `benchmark/algorithms/<ALGORITHM>/config.yml.`
 
 An example looks like this:
 
